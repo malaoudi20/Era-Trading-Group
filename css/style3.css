@@ -17,7 +17,11 @@ a{
 }
 
 nav{
-    padding: 20px 0;
+    /* padding: 20px 0; */
+    /* background: #fff; */
+    height:150px;
+    position: relative;
+    overflow: hidden;
 }
 nav ul{
     display: flex;
@@ -29,7 +33,7 @@ nav ul{
 nav ul li{
     color:#2E3192;
     font-size: 18px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
  .social  li a{
     color: #2E3192;
@@ -45,14 +49,14 @@ nav ul li{
     z-index: 5;
 }
 .logo{
-    
-    /* padding: 20px 0; */
+   height: 150px;
+   width: 150px;
 }
 .logo img{
     height:100%;
     width:100%;
     display: block;
-    margin-top: -35px;
+    /* margin-top: -25px; */
 }
 nav .menu ul{
     display: flex;
@@ -62,11 +66,12 @@ nav .menu ul{
     margin: 50px auto 0 auto;
    text-align: center;
 }
-nav .menu ul li a{
+nav ul li a{
     display: block;
-   color:#2E3192;
+   color:#fff;
    padding: 20px;
-   border-bottom: 1px solid rgba(46, 49, 146, 0.068);
+   border-bottom: 1px solid rgba(255, 255, 255, 0.548);
+   border-top: 1px solid rgba(255, 255, 255, 0.486);
    
 }
 .menu {
@@ -82,12 +87,27 @@ nav .menu ul li a{
     background-position: bottom;
     
   }
+  .header-right{
+     background: url(../images/1999.jpg) no-repeat  center center ;
+    background-size: cover;
+   
+    width:100%;
+    height:100vh;
+    
+  }
+  header .overlay{
+      /* background: rgba(46, 49, 146, 0.6); */
+      height:100%;
+      width:100%;
+      position: absolute;
+     
+  }
 header{
-    background: url(../images/era_bg3.jpg) no-repeat  center center ;
+    background: url(../images/era4.jpg) no-repeat  center center ;
     background-size: cover;
     width:100%;
     height:100vh;
-    /* position: relative; */
+    position: relative;
 }
 header .heading{
     position: absolute;
@@ -119,9 +139,9 @@ header .heading a{
 }
 header .heading a:hover{
     
-    background:transparent;
-    border: 2px solid #2E3192;
-    color:#2E3192;
+    background:#DAA520;
+    border: 2px solid #DAA520;
+    color:#fff;
 }
 header .bootstrap-wrapper{
     height:0;
@@ -166,7 +186,7 @@ header .bootstrap-wrapper{
     
     background:transparent;
     border: 2px solid #2E3192;
-    color:#2E3192;
+    color:rgb(146, 144, 46);
 }
 
 /* start services style */

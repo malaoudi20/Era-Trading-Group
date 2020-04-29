@@ -20,8 +20,10 @@ nav{
     /* padding: 20px 0; */
     /* background: #fff; */
     height:150px;
-    position: relative;
+    /* position: relative;
     overflow: hidden;
+    background: transparent;
+    margin-top: 10px; */
 }
 nav ul{
     display: flex;
@@ -58,21 +60,43 @@ nav ul li{
     display: block;
     /* margin-top: -25px; */
 }
-nav .menu ul{
+/* nav .menu ul{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-content: center;
     margin: 50px auto 0 auto;
    text-align: center;
-}
+} */
 nav ul li a{
     display: block;
    color:#fff;
-   padding: 20px;
+   padding: 10px;
+   text-transform: uppercase;
+   border-right:1px solid #f9f9f9;
+   margin-top: 10px;
    /* border-bottom: 1px solid rgba(255, 255, 255, 0.548);
    border-top: 1px solid rgba(255, 255, 255, 0.486); */
    
+}
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.3em;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
 }
 .menu {
     z-index: 2;
@@ -460,13 +484,12 @@ svg{
     border-radius: 50px;
     margin: 25px 0;
     cursor: pointer;
-    border: 2px solid #434573;
     transition: all .5s ease-in-out;
   }
   .contact .contact-form input[type="submit"]:hover{
    
-    background-color: transparent;
-    color: #434573;
+    background-color: #DAA520;
+    color: #fff;
    
   }
   .success{

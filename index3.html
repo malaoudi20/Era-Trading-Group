@@ -12,9 +12,7 @@
 <body>
     
     <header>
-        <div class="overlay">
-                
-        </div>
+    
         <nav>
         <div class="bootstrap-wrapper">
             <div class="container">
@@ -50,7 +48,12 @@
         <div class="bootstrap-wrapper">
             <div class="container">
                 <div class="heading">
-                    <h1 >Era Trading Group</h1>
+                    <!-- <h1 >Era Trading Group</h1> -->
+                    <h1 class="ml6">
+                        <span class="text-wrapper">
+                          <span class="letters">Era Trading Group</span>
+                        </span>
+                      </h1>
                 <p>Supplies to all over <span class="element"></span></p>
                 <a href="" class="main-btn">Contact us</a>
                 </div>
@@ -108,7 +111,7 @@
                             </div>
                             </div>
                     </div>
- <div class="col-md-6 " data-scroll> 
+ <div class="col-md-6 " > 
                         <h2>
                             
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -124,6 +127,7 @@
                         <p >Era Trading Group seeks to make the world a much smaller place by using all its expertise and network in the export, import and distribution world. Particularly in the MENA region, our strategic partners empower us with an edge in helping our clients find their best interest.
                     </p>
                      <a href="about.html#value" class="main-btn">Read More</a>
+                    
                     </div>
                     <!-- <div class="col-md-6"> 
                         
@@ -1682,6 +1686,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
     <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
     <script>
         var typed = new Typed('.element', {
@@ -1695,6 +1700,20 @@
 
         });
 
+    </script>
+
+    <script>
+        var textWrapper = document.querySelector(' .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: false})
+        .add({
+            targets: '.ml6 .letter',
+            translateY: ["1.1em", 0],
+            translateZ: 0,
+            duration: 1750,
+            delay: (el, i) => 50 * i
+        });
     </script>
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>

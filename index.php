@@ -1704,7 +1704,17 @@
  
 </section>
    
-
+<div class="loading">
+<h1 class="ml8">
+  <span class="letters-container">
+    <span class="letters letters-left">Loading</span>
+    <span class="letters bang">!</span>
+  </span>
+  <span class="circle circle-white"></span>
+  <span class="circle circle-dark"></span>
+  <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
+</h1>
+ </div>
 
 
 
@@ -1729,17 +1739,65 @@
     </script>
 
     <script>
-        var textWrapper = document.querySelector(' .letters');
-        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+        // var textWrapper = document.querySelector(' .letters');
+        // textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
         
-        anime.timeline({loop: false})
-        .add({
-            targets: '.ml6 .letter',
-            translateY: ["1.1em", 0],
-            translateZ: 0,
-            duration: 1750,
-            delay: (el, i) => 50 * i
-        });
+        // anime.timeline({loop: false})
+        // .add({
+        //     targets: '.ml6 .letter',
+        //     translateY: ["1.1em", 0],
+        //     translateZ: 0,
+        //     duration: 1750,
+        //     delay: (el, i) => 50 * i
+        // });
+
+
+        anime.timeline({loop: true})
+  .add({
+    targets: '.ml8 .circle-white',
+    scale: [0, 3],
+    opacity: [1, 0],
+    easing: "easeInOutExpo",
+    rotateZ: 360,
+    duration: 1100
+  }).add({
+    targets: '.ml8 .circle-container',
+    scale: [0, 1],
+    duration: 1100,
+    easing: "easeInOutExpo",
+    offset: '-=1000'
+  }).add({
+    targets: '.ml8 .circle-dark',
+    scale: [0, 1],
+    duration: 1100,
+    easing: "easeOutExpo",
+    offset: '-=600'
+  }).add({
+    targets: '.ml8 .letters-left',
+    scale: [0, 1],
+    duration: 1200,
+    offset: '-=550'
+  }).add({
+    targets: '.ml8 .bang',
+    scale: [0, 1],
+    rotateZ: [45, 15],
+    duration: 1200,
+    offset: '-=1000'
+  }).add({
+    targets: '.ml8',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1400
+  });
+
+anime({
+  targets: '.ml8 .circle-dark-dashed',
+  rotateZ: 360,
+  duration: 8000,
+  easing: "linear",
+  loop: true
+});
     </script>
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script> -->
@@ -1832,6 +1890,28 @@ $('#myfrom').on("submit", function(event){
 }); 
 
         });
+
+        $(window).on("load",function(){
+	$(".loading .ml8").fadeOut(5000,
+	  function(){
+		//$("body").css("overflow","auto");
+		$(this).parent().fadeOut(5000,
+		
+		function(){
+			
+			
+			
+			$(this).remove();
+			
+		});
+		
+		
+	
+});
+
+	
+	
+});
        
     </script>
      <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>

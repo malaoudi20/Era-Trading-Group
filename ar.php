@@ -21,7 +21,7 @@
                 <div class="row">
                     <div class="col-6 col-md-4 ">
                         <div class="logo">
-                            <a href="index.html"><img src="images/Era Logo-01.png"/></a>
+                            <a href="index.php"><img src="images/Era Logo-01.png"/></a>
                         </div>
                     </div>
     
@@ -45,7 +45,7 @@
                                     <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                    <li><a href="index.html">English</a></li>
+                                    <li><a href="index.php">English</a></li>
                                    
                                 
                                 </ul>
@@ -152,7 +152,7 @@
                         </h2>
                         <p >تسعى مجموعة إيرا التجارية إلى جعل العالم قرية صغيرة باستخدام كل خبراتها وشبكة اتصالاتها في عالم التصدير والاستيراد والتوزيع. خاصة في منطقة الشرق الأوسط وشمال إفريقيا، بدعم من شركاءنا الاستراتيجيون أمكننا التفوق في مساعدة عملائنا للوصول إلى أفضل ما يخدم مصالحهم.
                     </p>
-                     <a href="about-ar.html#value" class="main-btn">قراءة المزيد</a>
+                     <a href="about-ar.php#value" class="main-btn">قراءة المزيد</a>
                     
                     </div>
                     <!-- <div class="col-md-6"> 
@@ -1660,8 +1660,8 @@
           </div>
           <div class="col-lg-6 ">
             <div class="contact-form is-animated">
-              <form method="POST"  id="myfrom">
-                
+                <form method="POST"  id="myfrom">
+                    
                     <input type="text" name="subject"id="subject" placeholder="الموضوع *" required>
                   
                   <input type="email" name="sender" id="sender" placeholder="ُالبريد الالكتروني *" required>
@@ -1812,7 +1812,24 @@
         scrollTop: ($(target).offset().top)
     }, 3000);
 });
-
+$('#myfrom').on("submit", function(event){  
+    event.preventDefault();
+    
+    var sender=$('#sender').val();
+    var subject=$('#subject').val();
+    var message=$('#message').val();
+    //console.log(message);
+   
+         $.ajax({  
+              url:"sending_mail.php",  
+              method:"POST",  
+              data:'sender=' + sender+'&subject='+ subject+'&message=' + message,  
+              success:function(data){   
+                   $(' #mail-status').html(data);  
+              }  
+         });  
+    
+}); 
         });
        
     </script>

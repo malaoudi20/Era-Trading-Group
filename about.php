@@ -21,7 +21,7 @@
                 <div class="row">
                     <div class="col-6 col-md-4 ">
                         <div class="logo">
-                            <a href="index.html"><img src="images/Era Logo-01.png"/></a>
+                            <a href="index.php"><img src="images/Era Logo-01.png"/></a>
                         </div>
                     </div>
     
@@ -52,10 +52,10 @@
                             
                                   <div class="menu">
                                     <ul>
-                                    <li><a href="index.html#home">Home</a></li>
-                                    <li><a href="index.html#about">About</a></li>
-                                    <li><a href="index.html#products">Products</a></li>
-                                    <li><a href="index.html#why">Why us</a></li>
+                                    <li><a href="index.php#home">Home</a></li>
+                                    <li><a href="index.php#about">About</a></li>
+                                    <li><a href="index.php#products">Products</a></li>
+                                    <li><a href="index.php#why">Why us</a></li>
                                     <li><a href="#contact">Contact</a></li>
                                     </ul>
                                     </div>
@@ -233,7 +233,7 @@
               </div>
               <div class="col-lg-6">
                 <div class="contact-form is-animated">
-                  <form method="POST"  id="myfrom">
+                    <form method="POST"  id="myfrom">
                     
                         <input type="text" name="subject"id="subject" placeholder="Subject *" required>
                       
@@ -367,6 +367,24 @@
            
         // })
         });
+        $('#myfrom').on("submit", function(event){  
+    event.preventDefault();
+    
+    var sender=$('#sender').val();
+    var subject=$('#subject').val();
+    var message=$('#message').val();
+    //console.log(message);
+   
+         $.ajax({  
+              url:"sending_mail.php",  
+              method:"POST",  
+              data:'sender=' + sender+'&subject='+ subject+'&message=' + message,  
+              success:function(data){   
+                   $(' #mail-status').html(data);  
+              }  
+         });  
+    
+}); 
 
         });
        

@@ -21,7 +21,7 @@
                 <div class="row">
                     <div class="col-6 col-md-4 ">
                         <div class="logo">
-                            <a href="ar.html"><img src="images/Era Logo-01.png"/></a>
+                            <a href="ar.php"><img src="images/Era Logo-01.png"/></a>
                         </div>
                     </div>
     
@@ -45,18 +45,18 @@
                                     <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                    <li><a href="about.html#value">English</a></li>
+                                    <li><a href="about.php#value">English</a></li>
                                    
                                 
                                 </ul>
                             
                                   <div class="menu">
                                     <ul>
-                                    <li><a href="ar.html#home">الرئيسية</a></li>
-                                    <li><a href="ar.html#about">نبذه عنا</a></li>
-                                    <li><a href="ar.html#products">منتجاتنا</a></li>
-                                    <li><a href="ar.html#why">لماذا نحن</a></li>
-                                    <li><a href="ar.html#contact">تواصل معنا</a></li>
+                                    <li><a href="ar.php#home">الرئيسية</a></li>
+                                    <li><a href="ar.php#about">نبذه عنا</a></li>
+                                    <li><a href="ar.php#products">منتجاتنا</a></li>
+                                    <li><a href="ar.php#why">لماذا نحن</a></li>
+                                    <li><a href="ar.php#contact">تواصل معنا</a></li>
                                     </ul>
                                     </div>
                        
@@ -234,7 +234,7 @@
               </div>
               <div class="col-lg-6 ">
                 <div class="contact-form is-animated">
-                  <form method="POST"  id="myfrom">
+                    <form method="POST"  id="myfrom">
                     
                         <input type="text" name="subject"id="subject" placeholder="الموضوع *" required>
                       
@@ -367,6 +367,24 @@
            
         // })
         });
+        $('#myfrom').on("submit", function(event){  
+    event.preventDefault();
+    
+    var sender=$('#sender').val();
+    var subject=$('#subject').val();
+    var message=$('#message').val();
+    //console.log(message);
+   
+         $.ajax({  
+              url:"sending_mail.php",  
+              method:"POST",  
+              data:'sender=' + sender+'&subject='+ subject+'&message=' + message,  
+              success:function(data){   
+                   $(' #mail-status').html(data);  
+              }  
+         });  
+    
+}); 
 
         });
        

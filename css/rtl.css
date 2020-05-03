@@ -824,11 +824,11 @@ h1.ml8 {
       display: none;
   }
   header {
-    background: url(../images/era3-01.jpg) no-repeat;
-    background-size: 135% 100%;
+    background: url(../images/era-ar-01.jpg) no-repeat;
+    background-size: 100% 100%;
    
     height: 100vh;
-    /* background-position: right top; */
+    
     position: relative;
 }
   header .heading h1{
@@ -898,8 +898,8 @@ svg {
       display: none;
   }
   header {
-    background: url(../images/era3-01.jpg) no-repeat;
-    background-size: 135% 100%;
+    background: url(../images/era-ar-01.jpg) no-repeat;
+    background-size: 100% 100%;
    
     height: 100vh;
     /* background-position: right top; */
@@ -973,8 +973,8 @@ svg {
       display: none;
   }
   header {
-    background: url(../images/era3-01.jpg) no-repeat;
-    background-size: 135% 100%;
+    background: url(../images/era-ar-01.jpg) no-repeat;
+    background-size: 100% 100%;
    
     height: 100vh;
     /* background-position: right top; */

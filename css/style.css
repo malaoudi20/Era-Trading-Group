@@ -706,16 +706,22 @@ svg{
     text-align: center;
 }
 [data-scroll]{
+    -webkit-transition: all 4s;
+    -o-transition: all 4s;
     transition: all 4s;
 }
  [data-scroll="in"]{
  opacity: 1;
- transform: translateY(0px) scale(1);
+ -webkit-transform: translateY(0px) scale(1);
+     -ms-transform: translateY(0px) scale(1);
+         transform: translateY(0px) scale(1);
  /* width:100%; */
 }
 [data-scroll="out"]{
   opacity: 0;
-  transform: translateY(50px) scale(.9);
+  -webkit-transform: translateY(50px) scale(.9);
+      -ms-transform: translateY(50px) scale(.9);
+          transform: translateY(50px) scale(.9);
   /* width: 0; */
 }
 /* loading page */

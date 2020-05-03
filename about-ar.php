@@ -367,6 +367,14 @@
            
         // })
         });
+
+        $(".menu a, #contactBtn").click(function(e) {
+     
+    $(".menu").removeClass('menuSlide');
+    $(".toggle-btn ").removeClass("rotation");
+});
+
+
         $('#myfrom').on("submit", function(event){  
     event.preventDefault();
     

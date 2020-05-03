@@ -1868,7 +1868,10 @@ anime({
         var target = $(this).attr('href');
     $('html, body').animate({
         scrollTop: ($(target).offset().top)
+        
     }, 3000);
+    $(".menu").removeClass('menuSlide');
+    $(".toggle-btn ").removeClass("rotation");
 });
 $('#myfrom').on("submit", function(event){  
     event.preventDefault();
@@ -1892,10 +1895,10 @@ $('#myfrom').on("submit", function(event){
         });
 
         $(window).on("load",function(){
-	$(".loading .ml8").fadeOut(5000,
+	$(".loading .ml8").fadeOut(3000,
 	  function(){
 		//$("body").css("overflow","auto");
-		$(this).parent().fadeOut(5000,
+		$(this).parent().fadeOut(3000,
 		
 		function(){
 			

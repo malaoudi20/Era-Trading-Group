@@ -1868,6 +1868,8 @@ anime({
     $('html, body').animate({
         scrollTop: ($(target).offset().top)
     }, 3000);
+    $(".menu").removeClass('menuSlide');
+    $(".toggle-btn ").removeClass("rotation");
 });
 $('#myfrom').on("submit", function(event){  
     event.preventDefault();

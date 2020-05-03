@@ -45,7 +45,7 @@
                                     <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                    <li><a href="#">العربية</a></li>
+                                    <li><a href="about-ar.php#value">العربية</a></li>
                                    
                                 
                                 </ul>
@@ -57,7 +57,16 @@
                                     <li><a href="index.php#products">Products</a></li>
                                     <li><a href="index.php#why">Why us</a></li>
                                     <li><a href="#contact">Contact</a></li>
+                                    <li class="lang"><a href="about-ar.php#value">العربية</a></li>
                                     </ul>
+                                    <ul class="social mobiel">
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                    
+                                   
+                                
+                                </ul>
                                     </div>
                        
                     </div>

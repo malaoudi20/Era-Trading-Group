@@ -57,7 +57,17 @@
                                     <li><a href="#products">Products</a></li>
                                     <li><a href="#why">Why us</a></li>
                                     <li><a href="#contact">Contact</a></li>
+                                    <li class="lang"><a href="ar.php">العربية</a></li>
                                     </ul>
+                                   
+                                    <ul class="social mobiel">
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                    
+                                   
+                                
+                                </ul>
                                     </div>
                        
                     </div>
@@ -1864,7 +1874,7 @@ anime({
 	});
 
     $(".menu a, #contactBtn").click(function(e) {
-        e.preventDefault();
+        //e.preventDefault();
         var target = $(this).attr('href');
     $('html, body').animate({
         scrollTop: ($(target).offset().top)

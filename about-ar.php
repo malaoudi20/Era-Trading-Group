@@ -58,6 +58,14 @@
                                     <li><a href="ar.php#why">لماذا نحن</a></li>
                                     <li><a href="ar.php#contact">تواصل معنا</a></li>
                                     </ul>
+                                    <ul class="social mobiel">
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                    
+                                   
+                                
+                                </ul>
                                     </div>
                        
                     </div>

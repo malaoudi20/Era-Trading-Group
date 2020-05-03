@@ -766,8 +766,8 @@ h1.ml8 {
     z-index: 2;
     display: inline-block;
     line-height: 0.7em;
-    right:-21.88em;
-    top: 0.2em;
+    left:45%;
+    top: 0;
   }
   
   .ml8 .bang {

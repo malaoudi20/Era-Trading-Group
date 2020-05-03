@@ -11,34 +11,52 @@
 </head>
 <body>
     
-    <header>
-        <div class="overlay">
-                
-        </div>
+    <header id="home">
+    
         <nav>
         <div class="bootstrap-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-6 col-md-4 ">
                         <div class="logo">
                             <a href="index3.html"><img src="images/Era Logo-01.png"/></a>
                         </div>
                     </div>
     
-                    <div class="col-md-8">
+                    <div class=" col-6 col-md-8 ">
                       
-                            
+                        <div class="toggle-btn">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                            <span class="three"></span>
+                       </div>
                            
-                                <ul>
-                                    <li><a href="index3.html#home">Home</a></li>
-                                    <li><a href="index3.html#about">About</a></li>
-                                    <li><a href="index3.html#products">Products</a></li>
-                                    <li><a href="index3.html#why">Why us</a></li>
+                                <!-- <ul>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#products">Products</a></li>
+                                    <li><a href="#why">Why us</a></li>
                                     <li><a href="#contact">Contact</a></li>
                                     <li><a href="#">عربي</a></li>
+                                </ul> -->
+                                <ul class="social">
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="#">العربية</a></li>
+                                   
+                                
                                 </ul>
                             
-                           
+                                  <div class="menu">
+                                    <ul>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#products">Products</a></li>
+                                    <li><a href="#why">Why us</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                    </ul>
+                                    </div>
                        
                     </div>
                 </div>
@@ -50,9 +68,18 @@
         <div class="bootstrap-wrapper">
             <div class="container">
                 <div class="heading">
-                    <h1 >Era Trading Group</h1>
-                <p>Supplies to all over <span class="element"></span></p>
-                <a href="" class="main-btn">Contact us</a>
+                    <h1 >Era Trading <br class="break">Group</h1>
+                    <!-- <h1 class="ml6">
+                        <span class="text-wrapper">
+                          <span class="letters">Era <br/>Trading <br/>Group</span>
+                        </span>
+                      </h1> -->
+                <p>Supplies to all over 
+                    <span class="typing">
+                        <span class="element"></span>
+                    </span>
+                   </p>
+                <a href="#contact" class="main-btn" id="contactBtn">Contact us</a>
                 </div>
                
             </div>
@@ -76,9 +103,9 @@
                         <h2>
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     width="77.539px" height="74.313px" viewBox="0 0 77.539 74.313" enable-background="new 0 0 77.539 74.313" xml:space="preserve">
-                        <rect x="-1.907" y="18.174" transform="matrix(0.7973 -0.6036 0.6036 0.7973 -7.9912 21.5511)" fill="#2E3192" width="60" height="6"/>
-                        <rect x="2.605" y="43.39" transform="matrix(0.7973 -0.6036 0.6036 0.7973 -23.9173 24.5567)" fill="#2E3192" width="44" height="6"/>
-                        <rect x="19.821" y="46.878" transform="matrix(0.7973 -0.6036 0.6036 0.7973 -20.9116 40.4828)" fill="#2E3192" width="60" height="6"/>
+                        <rect x="-1.907" y="18.174" transform="matrix(0.7973 -0.6036 0.6036 0.7973 -7.9912 21.5511)" fill="#434573" width="60" height="6"/>
+                        <rect x="2.605" y="43.39" transform="matrix(0.7973 -0.6036 0.6036 0.7973 -23.9173 24.5567)" fill="#434573" width="44" height="6"/>
+                        <rect x="19.821" y="46.878" transform="matrix(0.7973 -0.6036 0.6036 0.7973 -20.9116 40.4828)" fill="#434573" width="60" height="6"/>
                         </svg>  
                         Vision and Code Values</h2>
                         <p>Era Trading Group visualized itself as being one of the primary suppliers of antiseptic, sanitizing, pre-form plastic, and factory machinery supplies throughout the Middle Eastern market. Eragt aims to provide its customers with superior quality products through effective business practices such as continuous improvements to products and services.</p>
@@ -309,13 +336,34 @@
             $('body').niceScroll({
 		
 		
-		cursorcolor:'#2E3192',
+		cursorcolor:'#434573',
 		cursorwidth:'10px',
-		cursorborder:'1px solid #2E3192',
+		cursorborder:'1px solid #434573',
 		cursorborderradius:0,
 		 autohidemode:false
 		
 	});
+    $(document).on("click", ".toggle-btn", function() {
+            var menuToggle=$(".menu");
+           // menuToggle.addClass('menuSlide');
+           
+           if( !(menuToggle.hasClass("menuSlide"))){
+           
+            menuToggle.removeClass('NotSlide').addClass('menuSlide');
+            $(".toggle-btn ").addClass("rotation");
+           }
+           else{
+            menuToggle.removeClass('menuSlide').addClass('NotSlide');
+            $(".toggle-btn ").removeClass("rotation");
+           }
+        //     menuToggle.toggle(function() {
+           
+        //         menuToggle.removeClass('NotSlide').addClass('menuSlide');
+        // }, function() {
+        //     menuToggle.removeClass('menuSlide').addClass('NotSlide');
+           
+        // })
+        });
 
         });
        

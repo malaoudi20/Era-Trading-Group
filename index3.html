@@ -17,26 +17,46 @@
         <div class="bootstrap-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-6 col-md-4 ">
                         <div class="logo">
                             <a href="index3.html"><img src="images/Era Logo-01.png"/></a>
                         </div>
                     </div>
     
-                    <div class="col-md-8">
+                    <div class=" col-6 col-md-8 ">
                       
-                            
+                        <div class="toggle-btn">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                            <span class="three"></span>
+                       </div>
                            
-                                <ul>
+                                <!-- <ul>
                                     <li><a href="#home">Home</a></li>
                                     <li><a href="#about">About</a></li>
                                     <li><a href="#products">Products</a></li>
                                     <li><a href="#why">Why us</a></li>
                                     <li><a href="#contact">Contact</a></li>
                                     <li><a href="#">عربي</a></li>
+                                </ul> -->
+                                <ul class="social">
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="#">العربية</a></li>
+                                   
+                                
                                 </ul>
                             
-                           
+                                  <div class="menu">
+                                    <ul>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#products">Products</a></li>
+                                    <li><a href="#why">Why us</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                    </ul>
+                                    </div>
                        
                     </div>
                 </div>
@@ -48,13 +68,17 @@
         <div class="bootstrap-wrapper">
             <div class="container">
                 <div class="heading">
-                    <!-- <h1 >Era Trading Group</h1> -->
-                    <h1 class="ml6">
+                    <h1 >Era Trading <br class="break">Group</h1>
+                    <!-- <h1 class="ml6">
                         <span class="text-wrapper">
-                          <span class="letters">Era Trading Group</span>
+                          <span class="letters">Era <br/>Trading <br/>Group</span>
                         </span>
-                      </h1>
-                <p>Supplies to all over <span class="element"></span></p>
+                      </h1> -->
+                <p>Supplies to all over 
+                    <span class="typing">
+                        <span class="element"></span>
+                    </span>
+                   </p>
                 <a href="#contact" class="main-btn" id="contactBtn">Contact us</a>
                 </div>
                
@@ -76,7 +100,7 @@
 
                    
 
-                    <div class="col-md-6" data-scroll> 
+                    <div class="col-md-6 ordering" data-scroll> 
                         <div id="mosaic_wrapper">
                            
                             <div>
@@ -1607,7 +1631,7 @@
                 Get In Touch
                
               </h2>
-              <div class="row">
+              <div class="row ordering">
                 <div class="col-md-12">
                    <div class="contact-info">
                      <i class="fa fa-map-marker-alt"></i>
@@ -1632,7 +1656,7 @@
             </div>
            
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 ">
             <div class="contact-form is-animated">
               <form method="POST"  id="myfrom">
                 
@@ -1705,7 +1729,7 @@
     <script>
         var textWrapper = document.querySelector(' .letters');
         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
+        
         anime.timeline({loop: false})
         .add({
             targets: '.ml6 .letter',
@@ -1716,32 +1740,48 @@
         });
     </script>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script> -->
     <script type="text/javascript">
 
-        var t1 = new TimelineMax({paused: false});
+        // var t1 = new TimelineMax({paused: false});
         
        
         
-        t1.to(".menu", 2, {
-             right: "0%",
-             ease: Expo.easeInOut,
-             delay: -2
-        });
+        // t1.to(".menu", 2, {
+        //      right: "0%",
+        //      ease: Expo.easeInOut,
+        //      delay: -2
+        // });
         
-        t1.staggerFrom(".menu ul li", 2, {y: -200, opacity: 0, ease:Expo.easeOut}, 0.2);
+        // t1.staggerFrom(".menu ul li", 2, {y: -200, opacity: 0, ease:Expo.easeOut}, 0.2);
         
   
   
-        t1.reverse();
+        // t1.reverse();
         $(document).on("click", ".toggle-btn", function() {
-             t1.reversed(!t1.reversed());
-             $(".one").toggleClass("unhover");
-             $(".two").toggleClass("unhover2");
+            var menuToggle=$(".menu");
+           // menuToggle.addClass('menuSlide');
+           
+           if( !(menuToggle.hasClass("menuSlide"))){
+           
+            menuToggle.removeClass('NotSlide').addClass('menuSlide');
+            $(".toggle-btn ").addClass("rotation");
+           }
+           else{
+            menuToggle.removeClass('menuSlide').addClass('NotSlide');
+            $(".toggle-btn ").removeClass("rotation");
+           }
+        //     menuToggle.toggle(function() {
+           
+        //         menuToggle.removeClass('NotSlide').addClass('menuSlide');
+        // }, function() {
+        //     menuToggle.removeClass('menuSlide').addClass('NotSlide');
+           
+        // })
         });
-        $(document).on("click", ".menu ul li a", function() {
-             t1.reversed(!t1.reversed());
-        });
+        // $(document).on("click", ".menu ul li a", function() {
+        //      t1.reversed(!t1.reversed());
+        // });
         
         
   
@@ -1749,7 +1789,7 @@
           //TweenMax.to(".programs-img",2,{scaleX:1})
   
         
-        </script> -->
+        </script>
     <script>
         $(document).ready(function(){
             $('body').niceScroll({

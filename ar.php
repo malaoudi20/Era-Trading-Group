@@ -1714,15 +1714,14 @@
 </section>
    
 <div class="loading">
-<h1 class="ml8">
-  <span class="letters-container">
-    <span class="letters letters-left">Loading</span>
-    <span class="letters bang"></span>
-  </span>
-  <span class="circle circle-white"></span>
-  <span class="circle circle-dark"></span>
-  <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
-</h1>
+<div class="loader">
+  <div class="loader__bar"></div>
+  <div class="loader__bar"></div>
+  <div class="loader__bar"></div>
+  <div class="loader__bar"></div>
+  <div class="loader__bar"></div>
+  <div class="loader__ball"></div>
+</div>
  </div>
 
 
@@ -1731,7 +1730,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
     <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+   
 
     <script>
         var typed = new Typed('.element', {
@@ -1748,85 +1747,18 @@
     </script>
 
     <script>
-        // var textWrapper = document.querySelector(' .letters');
-        // textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-        
-        // anime.timeline({loop: false})
-        // .add({
-        //     targets: '.ml6 .letter',
-        //     translateY: ["1.1em", 0],
-        //     translateZ: 0,
-        //     duration: 1750,
-        //     delay: (el, i) => 50 * i
-        // });
-
-        anime.timeline({loop: true})
-  .add({
-    targets: '.ml8 .circle-white',
-    scale: [0, 3],
-    opacity: [1, 0],
-    easing: "easeInOutExpo",
-    rotateZ: 360,
-    duration: 1100
-  }).add({
-    targets: '.ml8 .circle-container',
-    scale: [0, 1],
-    duration: 1100,
-    easing: "easeInOutExpo",
-    offset: '-=1000'
-  }).add({
-    targets: '.ml8 .circle-dark',
-    scale: [0, 1],
-    duration: 1100,
-    easing: "easeOutExpo",
-    offset: '-=600'
-  }).add({
-    targets: '.ml8 .letters-left',
-    scale: [0, 1],
-    duration: 1200,
-    offset: '-=550'
-  }).add({
-    targets: '.ml8 .bang',
-    scale: [0, 1],
-    rotateZ: [45, 15],
-    duration: 1200,
-    offset: '-=1000'
-  }).add({
-    targets: '.ml8',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1400
-  });
-
-anime({
-  targets: '.ml8 .circle-dark-dashed',
-  rotateZ: 360,
-  duration: 8000,
-  easing: "linear",
-  loop: true
-});
-    </script>
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script> -->
-    <script type="text/javascript">
-
-        // var t1 = new TimelineMax({paused: false});
-        
-       
-        
-        // t1.to(".menu", 2, {
-        //      right: "0%",
-        //      ease: Expo.easeInOut,
-        //      delay: -2
-        // });
-        
-        // t1.staggerFrom(".menu ul li", 2, {y: -200, opacity: 0, ease:Expo.easeOut}, 0.2);
-        
-  
-  
-        // t1.reverse();
-        $(document).on("click", ".toggle-btn", function() {
+        $(document).ready(function(){
+            $('body').niceScroll({
+		
+		
+		cursorcolor:'#434573',
+		cursorwidth:'10px',
+		cursorborder:'1px solid #434573',
+		cursorborderradius:0,
+		 autohidemode:false
+		
+	});
+    $(document).on("click", ".toggle-btn", function() {
             var menuToggle=$(".menu");
            // menuToggle.addClass('menuSlide');
            
@@ -1839,37 +1771,8 @@ anime({
             menuToggle.removeClass('menuSlide').addClass('NotSlide');
             $(".toggle-btn ").removeClass("rotation");
            }
-        //     menuToggle.toggle(function() {
-           
-        //         menuToggle.removeClass('NotSlide').addClass('menuSlide');
-        // }, function() {
-        //     menuToggle.removeClass('menuSlide').addClass('NotSlide');
-           
-        // })
+      
         });
-        // $(document).on("click", ".menu ul li a", function() {
-        //      t1.reversed(!t1.reversed());
-        // });
-        
-        
-  
-       
-          //TweenMax.to(".programs-img",2,{scaleX:1})
-  
-        
-        </script>
-    <script>
-        $(document).ready(function(){
-            $('body').niceScroll({
-		
-		
-		cursorcolor:'#434573',
-		cursorwidth:'10px',
-		cursorborder:'1px solid #434573',
-		cursorborderradius:0,
-		 autohidemode:false
-		
-	});
 
     $(".menu a, #contactBtn").click(function(e) {
         //e.preventDefault();
@@ -1901,10 +1804,10 @@ $('#myfrom').on("submit", function(event){
         });
 
         $(window).on("load",function(){
-	$(".loading .ml8").fadeOut(5000,
+	$(".loading .loader").fadeOut(4000,
 	  function(){
 		//$("body").css("overflow","auto");
-		$(this).parent().fadeOut(5000,
+		$(this).parent().fadeOut(4000,
 		
 		function(){
 			

@@ -278,7 +278,7 @@
                                 <!-- </div> -->
                             </div>
 
-                            <div class="col-md-5 ">
+                            <div class="col-md-5 offset-md-2">
                                 <!-- <div class="product-item"> -->
                                    
 
@@ -286,7 +286,7 @@
                                 <!-- </div> -->
                             </div>
 
-                            <div class="col-md-5 offset-md-1" data-scroll>
+                            <div class="col-md-5 " data-scroll>
                                 <div class="product-item" >
                                    <div class="product-icon">
                                     <div class="overlay"></div>

@@ -287,7 +287,7 @@
                                 <!-- </div> -->
                             </div>
 
-                            <div class="col-md-5 offset-md-1" data-scroll>
+                            <div class="col-md-5 offset-md-2" data-scroll>
                                 <div class="product-item" >
                                    <div class="product-icon">
                                     <div class="overlay"></div>

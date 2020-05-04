@@ -153,13 +153,11 @@ nav ul li a:before {
       opacity: 0;
   }
   .rotation span.one{
-   transform: rotate(40deg) translateY(10px);
+    transform: rotate(30deg) translate(5px,10px);
    
 }
 .rotation span.three{
-    /* margin: 0; */
-    transform: rotate(-35deg) translateY(-10px);
-   
+    transform: rotate(-40deg) translate(4px,-5px);
 }
   .social{
   margin-top: 35px;
@@ -336,7 +334,7 @@ header .bootstrap-wrapper{
     font-size: 2.7em;
     line-height: 2;
     text-transform: capitalize;
-    /* width:0; */
+    margin-bottom: 25px;
 }
 svg{
     height:70px;
@@ -384,7 +382,7 @@ svg{
     line-height: 2;
     text-transform: capitalize;
     text-align: right;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .products a{
@@ -507,7 +505,7 @@ svg{
     line-height: 2;
     text-transform: capitalize;
     text-align: right;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 .why-us img{
     display: block;
@@ -532,20 +530,6 @@ svg{
     padding: 5px;
     border-radius: 50%;
 }
-/* start partners style */
-.parteners{
-    padding: 80px 0;
-}
-.parteners h2{
-
-    color:#434573;
-    font-size: 2.7em;
-    line-height: 2;
-    text-transform: capitalize;
-    margin-bottom: 30px;
-    /* text-align: center; */
-}
-
 /* start location */
 .location{
     padding: 50px 0;
@@ -589,10 +573,12 @@ svg{
    color:#434573;
     font-size: 2.7em;
     font-weight: bold;
-    text-transform: uppercase;
-    /* text-align: center; */
+    text-transform: capitalize;
     line-height: 1.5;
-    /* letter-spacing: 2px; */
+    margin-bottom: 30px;
+  }
+  .contact .contact-form{
+      margin-top: 35px;
   }
   
   .contact .contact-form input{
@@ -604,7 +590,7 @@ svg{
     border-radius: 10px;
     background-color: rgba(139, 170, 248, 0.2);
     border: none;
-    color:#fff;
+    color:#434573;
   }
   .contact .contact-form textarea{
     display: block;
@@ -615,7 +601,7 @@ svg{
     border-radius: 10px;
     background-color:rgba(139, 170, 248, 0.2);
     border: none;
-    color:#fff;
+    color:#434573;
   }
   .contact .contact-form input[type="submit"]{
     display: block;
@@ -629,6 +615,7 @@ svg{
     margin: 25px 0;
     cursor: pointer;
     transition: all .5s ease-in-out;
+    color:#fff;
   }
   .contact .contact-form input[type="submit"]:hover{
    

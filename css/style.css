@@ -157,12 +157,12 @@ nav ul li a:before {
       opacity: 0;
   }
   .rotation span.one{
-   transform: rotate(40deg) translateY(10px);
+   transform: rotate(30deg) translate(5px,10px);
    
 }
 .rotation span.three{
     /* margin: 0; */
-    transform: rotate(-35deg) translateY(-10px);
+    transform: rotate(-40deg) translate(4px,-5px);
    
 }
   .social{
@@ -861,7 +861,10 @@ header .heading p {
 }
 header .heading .typing{
     display:block;
-    margin: 10px 0;
+    margin: 15px 0;
+}
+header .heading a{
+    margin: 30px 0;
 }
 .about h2 ,.products h2 ,.why-us h2 ,.contact h2, .value h2{
     font-size: 2em;

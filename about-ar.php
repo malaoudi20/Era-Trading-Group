@@ -125,7 +125,7 @@
                     </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-md-5 offset-md-2">
                             <div class="value-item">
                                 <div class="value-icon">
                                     <img src="images/quality.png">
@@ -140,7 +140,7 @@
 
                         </div>
 
-                        <div class="col-md-5 offset-md-2">
+                        <div class="col-md-5 ">
                             <div class="value-item">
                                 <div class="value-icon">
                                     <img src="images/integration.png">
@@ -154,7 +154,7 @@
 
                         </div>
 
-                        <div class="col-md-5">
+                        <div class="col-md-5 offset-md-2">
                             <div class="value-item">
                                 <div class="value-icon">
                                     <img src="images/reponsbility.png">
@@ -169,7 +169,7 @@
 
                         </div>
 
-                        <div class="col-md-5 offset-md-2">
+                        <div class="col-md-5 ">
                             <div class="value-item">
                                 <div class="value-icon">
                                     <img src="images/improve.png">

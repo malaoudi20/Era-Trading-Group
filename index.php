@@ -165,74 +165,7 @@
                      <a href="about.php#value" class="main-btn">Read More</a>
                     
                     </div>
-                    <!-- <div class="col-md-6"> 
-                        
-                        <h3>Vision and Code Values</h3>
-                        <p>Era Trading Group visualized itself as being one of the primary suppliers of antiseptic, sanitizing, pre-form plastic, and factory machinery supplies throughout the Middle Eastern market. Eragt aims to provide its customers with superior quality products through effective business practices such as continuous improvements to products and services.</p>
                    
-                       
-                    </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="value-item">
-                                <div class="value-icon">
-                                    <img src="images/truck.png">
-                                </div>
-                                <div class="value-desc">
-                                    <h4>COMMITMENT AND QUALITY</h4>
-                                    <p>We are committing to providing great and clear path from start to delivery. We have our inspection team that checks the quality at 3 stages, that is, at the factory, at the warehouse and prior to customer delivery to help us maintain our supreme quality.
-
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="value-item">
-                                <div class="value-icon">
-                                    <img src="images/truck.png">
-                                </div>
-                                <div class="value-desc">
-                                    <h4>INTEGRITY</h4>
-                                    <p>We take full accountability for our actions. We believe in honoring our contracts and obligations irrespective of the outcome. We promote ethical behavior through transparency and lawful operations.
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="value-item">
-                                <div class="value-icon">
-                                    <img src="images/truck.png">
-                                </div>
-                                <div class="value-desc">
-                                    <h4>RESPONSIBILITY</h4>
-                                    <p>We recognize the value of our Customers, Suppliers, Business Partners and fellow Team Members. We are accountable to each other and accept appropriate rewards and consequences. We foster an environment of equal opportunities that allows for both personal and professional development.
-
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="value-item">
-                                <div class="value-icon">
-                                    <img src="images/truck.png">
-                                </div>
-                                <div class="value-desc">
-                                    <h4>CONTINUOUS IMPROVEMENT</h4>
-                                    <p>We embrace a culture of continuous improvement by seeking feedback, working closely with our Customers and encouraging our employees to take initiatives to bring about effective changes to better our operations. We ensure inconsistencies are prioritized and adjusted at the earliest.
-
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div> -->
                 </div>
                
             </div>
@@ -273,18 +206,11 @@
                             </div>
 
                             <div class="col-md-5 offset-md-1">
-                                <!-- <div class="product-item"> -->
-                                  
-
-                                <!-- </div> -->
+                               
                             </div>
 
                             <div class="col-md-5 ">
-                                <!-- <div class="product-item"> -->
-                                   
-
-                                  
-                                <!-- </div> -->
+                            
                             </div>
 
                             <div class="col-md-5 offset-md-2" data-scroll>

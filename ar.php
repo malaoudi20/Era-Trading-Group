@@ -271,14 +271,14 @@
                                   
                             </div>
 
-                            <div class="col-md-5 offset-md-1">
+                            <div class="col-md-7">
                                 <!-- <div class="product-item"> -->
                                   
 
                                 <!-- </div> -->
                             </div>
 
-                            <div class="col-md-5 offset-md-2">
+                            <div class="col-md-7">
                                 <!-- <div class="product-item"> -->
                                    
 
@@ -319,7 +319,7 @@
                              </div>
                             </div>
 
-                            <div class="col-md-5 offset-md-1 ">
+                            <div class="col-md-7 ">
                                 <!-- <div class="product-item"> -->
                                    
 

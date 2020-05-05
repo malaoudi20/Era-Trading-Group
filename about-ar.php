@@ -57,6 +57,7 @@
                                     <li><a href="ar.php#products">منتجاتنا</a></li>
                                     <li><a href="ar.php#why">لماذا نحن</a></li>
                                     <li><a href="ar.php#contact">تواصل معنا</a></li>
+                                    <li><a href="about.php#value">English</a></li>
                                     </ul>
                                     <ul class="social mobiel">
                                     <li><a href="#"><i class="fab fa-facebook"></i></a></li>
